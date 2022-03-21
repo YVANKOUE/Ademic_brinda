@@ -22,6 +22,19 @@
     <link rel="stylesheet" href="{{asset('css/flaticon.css')}}">
     <link rel="stylesheet" href="{{asset('css/icomoon.css')}}">
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
+
+
+    @if(Route::is('Login')) 
+    <link rel="stylesheet" href="{{('log/fonts/icomoon/style.css')}}">
+
+    <link rel="stylesheet" href="{{asset('log/css/owl.carousel.min.css')}}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{asset('log/css/bootstrap.min.css')}}">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="{{asset('log/css/style.css')}}">
+    @endif
     <style>
       .login{
           text-decoration:none;
@@ -69,5 +82,12 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="{{asset('js/google-map.js')}}"></script>
   <script src="{{asset('js/main.js')}}"></script>
-</body>
+
+  @if(Route::is('Login')) 
+    <script src="{{('log/js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{('log/js/popper.min.js')}}"></script>
+    <script src="{{('log/js/bootstrap.min.js')}}"></script>
+    <script src="{{('log/js/main.js')}}"></script>
+    @endif
+</body>  
 </html>
